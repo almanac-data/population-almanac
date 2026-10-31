@@ -1,0 +1,44 @@
+id: census-international-database
+type: dataset
+title: U.S. Census Bureau International Database (IDB)
+description: |
+  The Census Bureau's world population estimates and projections by country, age and sex, with fertility, mortality and migration indicators, produced since the 1960s. An independent counterpart to UN World Population Prospects.
+publisher: U.S. Census Bureau, International Programs Center
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- population-estimates
+- population-projections
+- international
+- age-structure
+source:
+  canonical_url: https://www.census.gov/programs-surveys/international-programs/about/idb.html
+access:
+  method:
+  - web
+  - api
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- json
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (countries and areas)
+  temporal: varies by country (estimates and projections; span not checked)
+  cadence: annual
+license: public-domain (US Gov work)
+attribution: U.S. Census Bureau, International Database
+notes: |
+  Human-verified 2026-10-31: HTTP 200 (curl with a browser user agent). The page "International Database: World Population Estimates and Projections" lists access via the "International Database web tool", the "IDB Application Programming Interface (API)", and "Download the entire dataset". It says "The IDB was last updated in December 2025. The next update is planned for November 2026" and "We have produced these data since the 1960s". The country count, the projection horizon and the formats weren't checked. Cadence is annual going by the December 2025 and November 2026 dates.
+  Licence checked 2026-10-31: no data licence is stated on the page. The Census Bureau is a federal agency and its works are not copyrightable under 17 U.S.C. 105. The citation policy (https://www.census.gov/about/policies/citation.html) asks users to "cite the Census Bureau as the source of the original data".
