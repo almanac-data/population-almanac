@@ -1,57 +1,64 @@
 {
-  "name": "Example Almanac",
-  "description": "An open, versioned index of public example data.",
+  "name": "Population Almanac",
+  "description": "An open, versioned index of public population and demographic data.",
   "count": 1,
   "by_status": {
     "live": 1
   },
   "entries": [
     {
-      "id": "example-dataset",
+      "id": "un-desa-world-population-prospects",
       "type": "dataset",
-      "title": "Example Dataset (replace this with a real entry)",
-      "description": "A placeholder catalog entry so the index builds and CI passes on a fresh template. Delete this file once you have added your first real dataset.\n",
-      "publisher": "Example Agency",
+      "title": "UN DESA World Population Prospects",
+      "description": "The United Nations' official population estimates (1950-present) and projections to 2100 for 237 countries or areas, by single year of age and sex, with fertility, mortality and net migration indicators. The standard global reference for population size and structure.\n",
+      "publisher": "United Nations Department of Economic and Social Affairs, Population Division",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
       "topics": [
-        "example"
+        "population-estimates",
+        "population-projections",
+        "fertility",
+        "mortality",
+        "migration",
+        "age-structure"
       ],
       "source": {
-        "canonical_url": "https://example.org",
-        "identifiers": {
-          "doi": null
-        }
+        "canonical_url": "https://population.un.org/wpp/"
       },
       "access": {
         "method": [
-          "web"
+          "web",
+          "bulk",
+          "api"
         ],
         "auth_required": false,
-        "auth_note": null,
+        "auth_note": "Bulk Excel/CSV files need no login; the Data Portal API data endpoints require a free authorization token requested from the API page",
         "rate_limit": null
       },
       "format": [
-        "html"
+        "xlsx",
+        "csv",
+        "json"
       ],
-      "coverage": {
-        "spatial": "global",
-        "temporal": "n/a",
-        "cadence": "static"
-      },
-      "license": "CC0-1.0",
-      "attribution": "Example Agency",
-      "observed": {
-        "checked": "2026-08-23",
-        "reachable": true,
-        "http_status": 200,
-        "final_url": "https://example.org/",
-        "redirect_chain": [],
-        "fingerprint_result": "no-baseline"
-      },
       "status": "live",
-      "status_since": "2026-07-01",
+      "status_since": "2026-10-31",
       "status_source": "curator",
-      "recovery": [],
-      "notes": "This is a template stub. See SETUP.md for how to stand up your own almanac vertical, then replace this entry with real datasets.\n"
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (237 countries or areas, plus regional and income-group aggregates)",
+        "temporal": "1950-2100 (estimates to the present, projections to 2100)",
+        "cadence": "irregular"
+      },
+      "license": "CC-BY-3.0-IGO (WPP site and data files)",
+      "attribution": "United Nations, Department of Economic and Social Affairs, Population Division (2024). World Population Prospects 2024, Online Edition.",
+      "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200. A plain curl also got HTTP 200 but the page body is rendered by JavaScript, so the text was read in the browser. The page says \"The 2024 Revision of World Population Prospects is the twenty-eighth edition of official United Nations population estimates and projections\" and that it \"presents population estimates from 1950 to the present for 237 countries or areas\" and projections \"to the year 2100\". The 2024 revision was the latest seen. The page mentions Excel files, CSV bulk download and a Data Portal with \"an open API\"; the API page (https://population.un.org/dataportalapi/index.html) says \"our data endpoints require an authorization token for access\", hence the auth_note. Revisions come every two years or so, which the schema can't express, so cadence is irregular.\nLicence checked 2026-10-31: the downloads page (https://population.un.org/wpp/downloads) states \"Copyright © 2024 by United Nations, made available under a Creative Commons license CC BY 3.0 IGO: http://creativecommons.org/licenses/by/3.0/igo/\" followed by the suggested citation used as attribution here. The API page also names CC BY 3.0 IGO. Formats beyond xlsx/csv/json and the start of the probabilistic outputs weren't checked.\n"
     }
   ]
 }
