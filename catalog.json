@@ -1,11 +1,63 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
+    {
+      "id": "census-american-community-survey",
+      "type": "dataset",
+      "title": "U.S. Census Bureau American Community Survey (ACS)",
+      "description": "The Census Bureau's ongoing annual household survey producing detailed social, economic, housing and demographic estimates (1-year and 5-year) for the US and Puerto Rico, down to block groups for 5-year data. The main US source for population characteristics between censuses.\n",
+      "publisher": "U.S. Census Bureau",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "population-characteristics",
+        "demographics",
+        "household-survey",
+        "migration",
+        "united-states"
+      ],
+      "source": {
+        "canonical_url": "https://www.census.gov/programs-surveys/acs"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": "The Census Data API offers a free key (\"Request an API Key\"); whether low-volume use needs one wasn't checked",
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States and Puerto Rico (national, state, county, tract, block group)",
+        "temporal": "2005-present (2025 1-year estimates latest)",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Census Bureau, American Community Survey",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (curl with a browser user agent). The banner says \"2025 American Community Survey 1-year estimates and 2025 ACS 1-year Supplemental Estimates are now available.\" The page describes the ACS as \"the premier source of detailed information about the nation's people and housing. As an ongoing survey conducted by the U.S. Census Bureau since 2005, the ACS collects detailed social, economic, housing, and demographic information from a sample of households across the 50 states, the District of Columbia, and Puerto Rico.\" The geography levels and formats are from general knowledge of data.census.gov and weren't checked. The ACS also carries housing characteristics, so a housing-almanac entry could overlap; this entry is scoped to population characteristics.\nLicence checked 2026-10-31: no data licence is stated on the page. The Census Bureau is a federal agency and its works are not copyrightable under 17 U.S.C. 105. The citation policy (https://www.census.gov/about/policies/citation.html) asks users to \"cite the Census Bureau as the source of the original data\".\n"
+    },
     {
       "id": "un-desa-world-population-prospects",
       "type": "dataset",
