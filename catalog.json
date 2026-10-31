@@ -1,9 +1,9 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 9,
+  "count": 10,
   "by_status": {
-    "live": 9
+    "live": 10
   },
   "entries": [
     {
@@ -417,6 +417,55 @@
       "license": "INEGI Términos de Libre Uso de la Información (free use with attribution)",
       "attribution": "Fuente: INEGI, Censo de Población y Vivienda 2020",
       "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200. A curl with a browser user agent got HTTP 403, so the vertical should probe it headless. The page says \"El Censo de Población y Vivienda 2020 (Censo 2020) se realizó del 2 al 27 de marzo\" and that interviewers visited every dwelling \"para obtener información sobre estas, contar a la población que vive en México e indagar sobre sus principales características demográficas, socioeconómicas y culturales\". Tabs read \"Resultados generales, Documentación, Tabulados, Microdatos, Datos abiertos, Publicaciones, Herramientas\". It's a one-off census edition, so cadence is static; the geography levels and the formats are assumed and weren't checked. The 2020 census also feeds the education-almanac entry mexico-inegi-caracteristicas-educativas, which covers education topics only.\nLicence checked 2026-10-31: INEGI's Términos de Libre Uso (https://www.inegi.org.mx/inegi/terminos.html, read in headless Chromium) allow reuse, including as input to other products, and require \"Debe otorgar los créditos correspondientes al INEGI como autor, y cuando técnicamente sea posible, mencionar la fuente de extracción de la información de la siguiente manera: “Fuente: INEGI, nombre del producto de donde se extrae la información”\". This is INEGI's general information-use licence rather than a census-specific one.\n"
+    },
+    {
+      "id": "ipums-international",
+      "type": "dataset",
+      "title": "IPUMS International",
+      "description": "Harmonized census and survey microdata from national statistical offices worldwide (104 countries, 656 censuses and surveys, over 1 billion person records), integrated by the University of Minnesota so variables are comparable across countries and years.\n",
+      "publisher": "IPUMS, University of Minnesota",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "census",
+        "microdata",
+        "harmonized-data",
+        "population-characteristics"
+      ],
+      "source": {
+        "canonical_url": "https://international.ipums.org/international/"
+      },
+      "access": {
+        "method": [
+          "web"
+        ],
+        "auth_required": true,
+        "auth_note": "Free individual registration with a described research project, reviewed by IPUMS, and acceptance of the IPUMS International Usage License; each team member must apply and be licensed individually",
+        "rate_limit": null
+      },
+      "format": [
+        "dat",
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (104 countries)",
+        "temporal": "varies by country (historical and modern census rounds)",
+        "cadence": "irregular"
+      },
+      "license": "restricted — IPUMS International Usage License (no redistribution; scholarly research and education only; no commercial use)",
+      "attribution": "IPUMS International, Minnesota Population Center, University of Minnesota, plus the national statistical offices that produced each sample (see the citation page for the versioned citation)",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page says \"IPUMS International is dedicated to collecting and distributing census microdata from around the world\" and that the project aims to \"harmonize data, and disseminate the harmonized data free of charge\", with \"104 countries – 656 censuses and surveys – over 1 billion person records\" and \"Source data for IPUMS International are generously provided by participating National Statistical Offices.\" Data come as custom extracts built online. The extract formats (fixed-width with syntax files, csv) are assumed and weren't checked. Jurisdiction is national/US because the publisher is a US university, as the other verticals do for university-run sources; the coverage is global. It's run by a university, not a federal agency, so it isn't US Gov public domain.\nLicence checked 2026-10-31: the registration form (https://uma.pop.umn.edu/ipumsi/user/new, read in headless Chromium) carries the \"IPUMS INTERNATIONAL USAGE LICENSE\": \"Redistribution: You will not redistribute the data ... Under IPUMS International agreements with collaborating agencies, redistribution of the data to third parties is prohibited. Each member of a research team using the data must apply for access and be licensed individually. Usage: You agree to use IPUMS International data for scholarly research and educational purposes only. Commercial use is strictly prohibited.\" The form says the project description \"will be used to evaluate your application\". The citation page (https://international.ipums.org/international/citation.shtml) says publications \"must cite it appropriately\" and \"Researchers should also acknowledge the statistical agencies that originally produced the data\"; the exact versioned citation text wasn't captured.\n"
     },
     {
       "id": "un-desa-world-population-prospects",
