@@ -1,9 +1,9 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 14,
+  "count": 15,
   "by_status": {
-    "live": 14
+    "live": 15
   },
   "entries": [
     {
@@ -718,6 +718,56 @@
       "license": "CC-BY-3.0-IGO (WPP site and data files)",
       "attribution": "United Nations, Department of Economic and Social Affairs, Population Division (2024). World Population Prospects 2024, Online Edition.",
       "notes": "Human-verified 2026-10-31 in headless Chromium: HTTP 200. A plain curl also got HTTP 200 but the page body is rendered by JavaScript, so the text was read in the browser. The page says \"The 2024 Revision of World Population Prospects is the twenty-eighth edition of official United Nations population estimates and projections\" and that it \"presents population estimates from 1950 to the present for 237 countries or areas\" and projections \"to the year 2100\". The 2024 revision was the latest seen. The page mentions Excel files, CSV bulk download and a Data Portal with \"an open API\"; the API page (https://population.un.org/dataportalapi/index.html) says \"our data endpoints require an authorization token for access\", hence the auth_note. Revisions come every two years or so, which the schema can't express, so cadence is irregular.\nLicence checked 2026-10-31: the downloads page (https://population.un.org/wpp/downloads) states \"Copyright © 2024 by United Nations, made available under a Creative Commons license CC BY 3.0 IGO: http://creativecommons.org/licenses/by/3.0/igo/\" followed by the suggested citation used as attribution here. The API page also names CC BY 3.0 IGO. Formats beyond xlsx/csv/json and the start of the probabilistic outputs weren't checked.\n"
+    },
+    {
+      "id": "unsd-demographic-yearbook",
+      "type": "dataset",
+      "title": "UN Statistics Division Demographic Yearbook",
+      "description": "The United Nations Demographic Yearbook: official national statistics on population size and composition, censuses, births, deaths, marriages and divorces, compiled annually from national statistical offices since 1948, with special census-topic issues.\n",
+      "publisher": "United Nations Statistics Division (UNSD)",
+      "jurisdiction": {
+        "scope": "multilateral",
+        "country": null
+      },
+      "topics": [
+        "census",
+        "population-estimates",
+        "vital-statistics",
+        "demographic-yearbook"
+      ],
+      "source": {
+        "canonical_url": "https://unstats.un.org/unsd/demographic-social/products/dyb/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "pdf",
+        "xlsx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (national data reported by countries or areas)",
+        "temporal": "1948-present (DYB 2024 latest)",
+        "cadence": "annual"
+      },
+      "license": "unverified — no data-specific licence on the DYB page; its footer links the un.org Terms of Use (personal, non-commercial); the UNdata mirror's terms allow free redistribution with citation",
+      "attribution": "United Nations Statistics Division, Demographic Yearbook",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page lists \"Demographic Yearbook (DYB) Regular Issues 2021 - 2024\" with \"DYB 2024 - individual tables & notes - Download a copy (pdf 16.0MB)\", annual issues back to 1948-1959, special census-round issues, and country metadata for population estimates, vital statistics and population and housing censuses. DYB 2024 is the latest issue seen. Births and deaths here are population inputs; vital statistics as health outcomes belong to health-almanac. The format list is from link labels (pdf); the xlsx for individual tables is assumed and wasn't checked.\nLicence checked 2026-10-31: the DYB page links only to http://www.un.org/en/aboutun/copyright/ and http://www.un.org/en/aboutun/terms/. The un.org Terms of Use (https://www.un.org/en/about-us/terms-of-use) grant permission \"to download and copy the information ... for the User's personal, non-commercial use, without any right to resell or redistribute them\". DYB tables are also served through UNdata, whose terms (https://data.un.org/Host.aspx?Content=UNdataUse) say \"All data and metadata provided on UNdata's website are available free of charge and may be copied freely, duplicated and further distributed provided that UNdata is cited as the reference.\" The two conflict, and neither is DYB-specific, so the licence is left unverified.\n"
     }
   ]
 }
