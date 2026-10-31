@@ -1,0 +1,44 @@
+id: abs-population
+type: dataset
+title: Australian Bureau of Statistics Population
+description: |
+  The ABS population statistics topic: quarterly national, state and territory population estimates with components of change (natural increase, net overseas migration), regional population, projections, births, deaths and migration releases.
+publisher: Australian Bureau of Statistics (ABS)
+jurisdiction:
+  scope: national
+  country: AU
+topics:
+- population-estimates
+- population-projections
+- migration
+- components-of-change
+- australia
+source:
+  canonical_url: https://www.abs.gov.au/statistics/people/population
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+- csv
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Australia (national, state and territory, regional)
+  temporal: varies by release (estimates back to 1981 in the population clock; March 2026 quarter latest)
+  cadence: quarterly
+license: CC-BY-4.0 (ABS website copyright statement; excludes microdata, logos and third-party content)
+attribution: Australian Bureau of Statistics, <release title>
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The topic page lists releases including "Population clock and pyramid" ("population estimates back to 1981 and projections out to 2066") and "National, state and territory population" (released 17/09/2026): "Australia’s population was 27,921,150 people at 31 March 2026 ... Annual natural increase was 100,600 and net overseas migration was 292,100." It also lists "Deaths, Australia" (2/10/2026). Cadence is that of the headline national release; other releases on the page are annual. Formats and the ABS Data API weren't checked. Census of Population and Housing data live under abs.gov.au/census and aren't covered here.
+  Licence checked 2026-10-31: the ABS copyright page (https://www.abs.gov.au/website-privacy-copyright-and-disclaimer) says "All material presented on this website is provided under a Creative Commons Attribution 4.0 International licence, with the exception of: the Commonwealth Coat of Arms the ABS logo material protected by a trade mark unit record data (microdata) content supplied by third parties ...". The attribution format the ABS asks for wasn't captured, so the attribution string is the curator's.
