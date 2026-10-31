@@ -1,9 +1,9 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 12,
+  "count": 13,
   "by_status": {
-    "live": 12
+    "live": 13
   },
   "entries": [
     {
@@ -566,6 +566,56 @@
       "license": "OGL-UK-3.0 (Open Government Licence v3.0, except where otherwise stated)",
       "attribution": "Office for National Statistics, Population estimates",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page reads \"Annual population estimates. Figures are available for various administrative and electoral geographies and for different population sub-groups, for example, estimates of the very old and estimates by marital status.\" Its spotlight is \"Population estimates for the UK, England, Wales, Scotland and Northern Ireland: mid-2025\", saying \"The population of the UK continued to grow in the year to mid-2025, reaching an estimated 69.5 million people.\" This topic page covers estimates only; ONS Census 2021 results and national population projections sit on sibling pages and aren't separately cataloged. Formats and start years weren't checked.\nLicence checked 2026-10-31: the page footer says \"All content is available under the Open Government Licence v3.0, except where otherwise stated\", and the ONS terms and conditions (https://www.ons.gov.uk/help/termsandconditions, last updated 8 May 2026) say \"Most content on this website is subject to Crown copyright protection and is published under the Open Government Licence (OGL). Some content is exempt from the OGL\". That is a site-wide statement, not a dataset-specific one.\n"
+    },
+    {
+      "id": "statssa-census-2022",
+      "type": "dataset",
+      "title": "Statistics South Africa Census 2022",
+      "description": "Stats SA's census portal for South Africa's Census 2022, the country's first digital population count, with comparable results from the 2011, 2001 and 1996 censuses by location and theme.\n",
+      "publisher": "Statistics South Africa (Stats SA)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "ZA"
+      },
+      "topics": [
+        "census",
+        "population-count",
+        "households",
+        "south-africa",
+        "africa"
+      ],
+      "source": {
+        "canonical_url": "https://census.statssa.gov.za/"
+      },
+      "access": {
+        "method": [
+          "web"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "html",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "South Africa (national and sub-national, via Stats by Location)",
+        "temporal": "1996, 2001, 2011, 2022 censuses",
+        "cadence": "irregular"
+      },
+      "license": "unverified — Stats SA standard copyright notice (reuse with acknowledgement, no sale without permission), seen in a Stats SA publication, not on the census portal",
+      "attribution": "Statistics South Africa, Census 2022",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The portal is a JavaScript app (plain curl returns only the title \"Statistics South Africa | Census Dissemination\"), so it was read in headless Chromium, which landed on https://census.statssa.gov.za/#/. It reads \"Welcome to the official Stats SA Census Portal\" and \"Census 2022 was the first digital population count\", shows \"Total population: 62 027 503\" and \"Number of households: 17 828 778\", and has year tabs for 2022, 2011, 2001 and 1996 plus \"Stats by Location\" and \"Stats by Theme\". The Census 2022 statistical release P0301.4 is served at https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf (HTTP 200; its cover says \"Embargoed until: 10 October 2023\"); that URL was fetched directly, and its link from the portal wasn't traced. Downloadable tables, the geography levels and any API weren't checked.\nLicence checked 2026-10-31: no licence or terms text was found on the portal, and the release PDF's front matter yielded no copyright text to pdftotext. Stats SA's Work Programme 2026/27 (https://www.statssa.gov.za/strategy_plan/Work_Programme_2026_27.pdf) carries the agency's standard notice: \"Users may apply or process this data, provided Statistics South Africa (Stats SA) is acknowledged as the original source of the data; that it is specified that the application and/or analysis is the result of the user’s independent processing of the data; and that neither the basic data nor any reprocessed version or application thereof may be sold or offered for sale in any form whatsoever without prior permission from Stats SA.\" That's a publication notice, not a census-data licence, so the licence stays unverified.\n"
     },
     {
       "id": "un-desa-world-population-prospects",
