@@ -1,9 +1,9 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 5,
+  "count": 6,
   "by_status": {
-    "live": 5
+    "live": 6
   },
   "entries": [
     {
@@ -211,6 +211,57 @@
       "license": "public-domain (US Gov work)",
       "attribution": "U.S. Census Bureau, International Database",
       "notes": "Human-verified 2026-10-31: HTTP 200 (curl with a browser user agent). The page \"International Database: World Population Estimates and Projections\" lists access via the \"International Database web tool\", the \"IDB Application Programming Interface (API)\", and \"Download the entire dataset\". It says \"The IDB was last updated in December 2025. The next update is planned for November 2026\" and \"We have produced these data since the 1960s\". The country count, the projection horizon and the formats weren't checked. Cadence is annual going by the December 2025 and November 2026 dates.\nLicence checked 2026-10-31: no data licence is stated on the page. The Census Bureau is a federal agency and its works are not copyrightable under 17 U.S.C. 105. The citation policy (https://www.census.gov/about/policies/citation.html) asks users to \"cite the Census Bureau as the source of the original data\".\n"
+    },
+    {
+      "id": "census-population-estimates-program",
+      "type": "dataset",
+      "title": "U.S. Census Bureau Population Estimates Program (PEP)",
+      "description": "Annual Census Bureau estimates of the resident population and housing units for the nation, states, counties, metro areas, cities and towns, and Puerto Rico, by age, sex, race and Hispanic origin, with components of change (births, deaths, migration) between censuses.\n",
+      "publisher": "U.S. Census Bureau",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "population-estimates",
+        "components-of-change",
+        "migration",
+        "united-states"
+      ],
+      "source": {
+        "canonical_url": "https://www.census.gov/programs-surveys/popest.html"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "xlsx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States and Puerto Rico (national, state, county, metro/micro area, city and town)",
+        "temporal": "vintage-based annual series, with intercensal estimates by decade (Vintage 2025 latest seen)",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Census Bureau, Population Estimates Program",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (curl with a browser user agent). The page \"Population and Housing Unit Estimates\" says \"The Census Bureau's Population Estimates Program (PEP) produces estimates of the population for the United States, states, metropolitan and micropolitan statistical areas, counties, cities, towns, as well as for Puerto Rico and its municipios.\" A June 9, 2026 press release mentions a media embargo for \"Vintage 2025 Population Estimates\", and the page notes \"Intercensal estimates are produced once every 10 years after the decennial census\". The demographic breakdowns, the formats and API availability are from general knowledge and weren't checked.\nLicence checked 2026-10-31: no data licence is stated on the page. The Census Bureau is a federal agency and its works are not copyrightable under 17 U.S.C. 105. The citation policy (https://www.census.gov/about/policies/citation.html) asks users to \"cite the Census Bureau as the source of the original data\".\n"
     },
     {
       "id": "un-desa-world-population-prospects",
