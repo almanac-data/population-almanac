@@ -1,9 +1,9 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 11,
+  "count": 12,
   "by_status": {
-    "live": 11
+    "live": 12
   },
   "entries": [
     {
@@ -516,6 +516,56 @@
       "license": "Statistics Bureau Terms of Use (based on Public Data License 1.0, compatible with CC-BY-4.0; numerical data not subject to copyright)",
       "attribution": "Source: Statistics Bureau, Ministry of Internal Affairs and Communications, Population Census",
       "notes": "Human-verified 2026-10-31: HTTP 200. The English page \"Population Census\" lists sections for the 2025, 2020, 2015, 2010 and 2005 censuses. The 2025 section shows the outline, explanation of terms and questionnaire; \"Summary of the results and statistical tables\" appears under 2020 and earlier, so 2020 is the latest round with results linked from this page. The census runs every five years, which the schema can't express, so cadence is irregular. Full tables are disseminated through e-Stat (www.e-stat.go.jp), which wasn't probed. The xlsx format and the geography levels are assumed and weren't checked.\nLicence checked 2026-10-31: the site's \"Information for use of this Website\" page (https://www.stat.go.jp/english/info/riyou.html) says content may be copied and modified, \"Commercial use of Content is also permitted\", and \"numerical data and data in Simple tables, graphs, and so forth are not subject to copyright. Accordingly the terms of use does not apply to such data, and said data may be used freely.\" It adds \"The Terms of Use was established on March 7, 2025. The Terms of Use is based on the Public Data License (Version 1.0)\" and \"The Terms of Use are compatible with the Creative Commons Attribution License 4.0\". The source-citation example is the basis of the attribution string.\n"
+    },
+    {
+      "id": "ons-population-estimates",
+      "type": "dataset",
+      "title": "ONS Population Estimates",
+      "description": "The Office for National Statistics' annual mid-year population estimates for the UK and its constituent countries, local authorities and other geographies, by age and sex, with components of change (births, deaths, migration).\n",
+      "publisher": "Office for National Statistics (ONS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "GB"
+      },
+      "topics": [
+        "population-estimates",
+        "mid-year-estimates",
+        "components-of-change",
+        "united-kingdom"
+      ],
+      "source": {
+        "canonical_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "csv"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United Kingdom (UK, constituent countries, local authorities and other geographies)",
+        "temporal": "varies by series (mid-2025 latest)",
+        "cadence": "annual"
+      },
+      "license": "OGL-UK-3.0 (Open Government Licence v3.0, except where otherwise stated)",
+      "attribution": "Office for National Statistics, Population estimates",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The page reads \"Annual population estimates. Figures are available for various administrative and electoral geographies and for different population sub-groups, for example, estimates of the very old and estimates by marital status.\" Its spotlight is \"Population estimates for the UK, England, Wales, Scotland and Northern Ireland: mid-2025\", saying \"The population of the UK continued to grow in the year to mid-2025, reaching an estimated 69.5 million people.\" This topic page covers estimates only; ONS Census 2021 results and national population projections sit on sibling pages and aren't separately cataloged. Formats and start years weren't checked.\nLicence checked 2026-10-31: the page footer says \"All content is available under the Open Government Licence v3.0, except where otherwise stated\", and the ONS terms and conditions (https://www.ons.gov.uk/help/termsandconditions, last updated 8 May 2026) say \"Most content on this website is subject to Crown copyright protection and is published under the Open Government Licence (OGL). Some content is exempt from the OGL\". That is a site-wide statement, not a dataset-specific one.\n"
     },
     {
       "id": "un-desa-world-population-prospects",
