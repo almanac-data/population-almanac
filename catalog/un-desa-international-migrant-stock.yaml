@@ -1,0 +1,41 @@
+id: un-desa-international-migrant-stock
+type: dataset
+title: UN DESA International Migrant Stock
+description: |
+  United Nations estimates of the number of international migrants by sex, age, country of destination and country of origin for 233 countries and areas, 1990-2024. The reference series for migration as a component of population.
+publisher: United Nations Department of Economic and Social Affairs, Population Division
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- migration
+- international-migrants
+- population-stock
+source:
+  canonical_url: https://www.un.org/development/desa/pd/content/international-migrant-stock
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (233 countries and areas)
+  temporal: 1990-2024
+  cadence: irregular
+license: CC-BY-3.0-IGO (copyright statement inside the 2024 data files)
+attribution: 'United Nations Department of Economic and Social Affairs, Population Division (2024). International Migrant Stock 2024.'
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The page heads "International Migrant Stock 2024" and says the 2024 edition "presents the latest United Nations estimates of the numbers and characteristics of international migrants around the world. Covering the period from 1990 to 2024 ... for 233 countries and areas." It links Excel files for total, age and sex, and destination and origin, with older editions (2019, 2017 and earlier) below. Editions are irregular (about every 2-5 years).
+  Licence checked 2026-10-31: the page itself only carries the un.org footer (Copyright, Terms of Use). The 2024 data file undesa_pd_2024_ims_stock_by_sex_and_destination.xlsx (downloaded from the page's link, HTTP 200 with a browser user agent, 403 without one) states "Copyright © 2024 by United Nations, made available under a Creative Commons license CC BY 3.0 IGO: http://creativecommons.org/licenses/by/3.0/igo/" and gives the suggested citation "United Nations Department of Economic and Social Affairs, Population Division (2024)." Only that one file was opened; the others are assumed to carry the same statement. The attribution's dataset title is added by the curator. Migration flows (a separate UN dataset) are not covered here.
