@@ -1,9 +1,9 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 6,
+  "count": 7,
   "by_status": {
-    "live": 6
+    "live": 7
   },
   "entries": [
     {
@@ -262,6 +262,60 @@
       "license": "public-domain (US Gov work)",
       "attribution": "U.S. Census Bureau, Population Estimates Program",
       "notes": "Human-verified 2026-10-31: HTTP 200 (curl with a browser user agent). The page \"Population and Housing Unit Estimates\" says \"The Census Bureau's Population Estimates Program (PEP) produces estimates of the population for the United States, states, metropolitan and micropolitan statistical areas, counties, cities, towns, as well as for Puerto Rico and its municipios.\" A June 9, 2026 press release mentions a media embargo for \"Vintage 2025 Population Estimates\", and the page notes \"Intercensal estimates are produced once every 10 years after the decennial census\". The demographic breakdowns, the formats and API availability are from general knowledge and weren't checked.\nLicence checked 2026-10-31: no data licence is stated on the page. The Census Bureau is a federal agency and its works are not copyrightable under 17 U.S.C. 105. The citation policy (https://www.census.gov/about/policies/citation.html) asks users to \"cite the Census Bureau as the source of the original data\".\n"
+    },
+    {
+      "id": "eurostat-population-and-demography",
+      "type": "dataset",
+      "title": "Eurostat Population and Demography Database",
+      "description": "Eurostat's population statistics for the EU, EFTA and candidate countries: population on 1 January, births, deaths and migration as components of change, population projections, and the population and housing census (Census Hub) results.\n",
+      "publisher": "Eurostat (European Commission)",
+      "jurisdiction": {
+        "scope": "regional-bloc",
+        "country": null
+      },
+      "topics": [
+        "population-estimates",
+        "population-projections",
+        "migration",
+        "census",
+        "european-union"
+      ],
+      "source": {
+        "canonical_url": "https://ec.europa.eu/eurostat/web/population-demography"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "tsv",
+        "xlsx",
+        "sdmx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "EU member states, EFTA and candidate countries (national and NUTS regions)",
+        "temporal": "varies by dataset",
+        "cadence": "annual"
+      },
+      "license": "CC-BY-4.0 (Eurostat copyright notice and free re-use of data)",
+      "attribution": "Eurostat, Population and demography database",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The theme page \"Population and demography\" has sub-sections \"Population and housing censuses\" (with Census Hub), \"Demography, population stock and balance\" and \"Population projections\", each with a Database page. The suggested URL /web/population-demography/database returned HTTP 404, so the theme overview is cataloged; the demography database page is https://ec.europa.eu/eurostat/web/population-demography/demography-population-stock-balance/database (HTTP 200), which lists selected and detailed datasets. Releases, start years and NUTS levels weren't checked. The formats and the API/bulk access are from Eurostat's site-wide data tools (Web services, Bulk download in the menu) and weren't checked per dataset.\nLicence checked 2026-10-31: Eurostat's copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice) says editorial content \"is licensed under the Creative Commons Attribution 4.0 International licence\" and \"Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged.\" This matches the licence string used for Eurostat entries in the other verticals.\n"
     },
     {
       "id": "un-desa-world-population-prospects",
