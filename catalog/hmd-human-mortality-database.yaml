@@ -1,0 +1,45 @@
+id: hmd-human-mortality-database
+type: dataset
+title: Human Mortality Database
+description: |
+  Harmonized population estimates, exposures-to-risk, death counts, death rates and period and cohort life tables for about 40 mainly high-income countries, built from national vital statistics and censuses. The standard research source for long-run mortality and population-at-risk series.
+publisher: Max Planck Institute for Demographic Research, University of California, Berkeley, and French Institute for Demographic Studies (INED)
+jurisdiction:
+  scope: international-ngo
+  country: null
+topics:
+- mortality
+- life-tables
+- population-estimates
+- exposures
+- longevity
+source:
+  canonical_url: https://www.mortality.org/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: true
+  auth_note: Free registration (name, e-mail, affiliation) and acceptance of the HMD user agreement are required before downloading data; users registered before 15 June 2022 must register again
+  rate_limit: null
+format:
+- txt
+- xlsx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: about 40 countries or areas, mainly Europe, North America, East Asia and Oceania
+  temporal: varies by country (some series start in the 18th or 19th century)
+  cadence: irregular
+license: CC-BY-4.0 (HMD user agreement; HMD-constructed data only — input data remain under each provider's licence)
+attribution: 'HMD. Human Mortality Database. Max Planck Institute for Demographic Research (Germany), University of California, Berkeley (USA), and French Institute for Demographic Studies (France). Available at www.mortality.org (data downloaded on [date], DOI: 10.4054/HMD.Countries.[version code]).'
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The home page says "The Human Mortality Database (HMD) is the world's leading scientific data resource on mortality in developed countries. The HMD provides detailed high-quality harmonized mortality and population estimates" and "The HMD follows open data principles." It lists summary-indicator Excel tables (infant mortality, survival to 65, life expectancy, population), zipped data files and a "Data by country or area" list (Australia, Austria, Belarus, Belgium ...). The country count, time spans and txt format are from general knowledge of the HMD and weren't checked; the latest release date wasn't captured. Included here for population estimates and exposures; mortality as a health outcome stays with health-almanac (CDC NVSS, WHO mortality database), and this entry doesn't duplicate them.
+  Registration: the FAQ (https://www.mortality.org/Project/FAQ) says "We require you to register before accessing the data in order to obtain basic contact information (i.e., your name, e-mail address, affiliation, and title)", and the login page says that users from before June 15, 2022 "will need to register again ... and accept the new user agreement before being able to download HMD data".
+  Licence checked 2026-10-31: the User Agreement (https://www.mortality.org/Data/UserAgreement) says "The HMD data are licensed under a Creative Commons Attribution 4.0 International License" and "The data constructed by the HMD team are published under the CC BY 4.0 license. This is not the case for the input data (for all HMD data series) which remain under each provider's distribution license." The attribution is the suggested citation from https://www.mortality.org/Research/CitationGuidelines.
