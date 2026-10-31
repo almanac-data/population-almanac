@@ -1,0 +1,43 @@
+id: unsd-demographic-yearbook
+type: dataset
+title: UN Statistics Division Demographic Yearbook
+description: |
+  The United Nations Demographic Yearbook: official national statistics on population size and composition, censuses, births, deaths, marriages and divorces, compiled annually from national statistical offices since 1948, with special census-topic issues.
+publisher: United Nations Statistics Division (UNSD)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- census
+- population-estimates
+- vital-statistics
+- demographic-yearbook
+source:
+  canonical_url: https://unstats.un.org/unsd/demographic-social/products/dyb/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- pdf
+- xlsx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (national data reported by countries or areas)
+  temporal: 1948-present (DYB 2024 latest)
+  cadence: annual
+license: unverified — no data-specific licence on the DYB page; its footer links the un.org Terms of Use (personal, non-commercial); the UNdata mirror's terms allow free redistribution with citation
+attribution: United Nations Statistics Division, Demographic Yearbook
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The page lists "Demographic Yearbook (DYB) Regular Issues 2021 - 2024" with "DYB 2024 - individual tables & notes - Download a copy (pdf 16.0MB)", annual issues back to 1948-1959, special census-round issues, and country metadata for population estimates, vital statistics and population and housing censuses. DYB 2024 is the latest issue seen. Births and deaths here are population inputs; vital statistics as health outcomes belong to health-almanac. The format list is from link labels (pdf); the xlsx for individual tables is assumed and wasn't checked.
+  Licence checked 2026-10-31: the DYB page links only to http://www.un.org/en/aboutun/copyright/ and http://www.un.org/en/aboutun/terms/. The un.org Terms of Use (https://www.un.org/en/about-us/terms-of-use) grant permission "to download and copy the information ... for the User's personal, non-commercial use, without any right to resell or redistribute them". DYB tables are also served through UNdata, whose terms (https://data.un.org/Host.aspx?Content=UNdataUse) say "All data and metadata provided on UNdata's website are available free of charge and may be copied freely, duplicated and further distributed provided that UNdata is cited as the reference." The two conflict, and neither is DYB-specific, so the licence is left unverified.
