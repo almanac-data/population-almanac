@@ -1,9 +1,9 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 10,
+  "count": 11,
   "by_status": {
-    "live": 10
+    "live": 11
   },
   "entries": [
     {
@@ -466,6 +466,56 @@
       "license": "restricted — IPUMS International Usage License (no redistribution; scholarly research and education only; no commercial use)",
       "attribution": "IPUMS International, Minnesota Population Center, University of Minnesota, plus the national statistical offices that produced each sample (see the citation page for the versioned citation)",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page says \"IPUMS International is dedicated to collecting and distributing census microdata from around the world\" and that the project aims to \"harmonize data, and disseminate the harmonized data free of charge\", with \"104 countries – 656 censuses and surveys – over 1 billion person records\" and \"Source data for IPUMS International are generously provided by participating National Statistical Offices.\" Data come as custom extracts built online. The extract formats (fixed-width with syntax files, csv) are assumed and weren't checked. Jurisdiction is national/US because the publisher is a US university, as the other verticals do for university-run sources; the coverage is global. It's run by a university, not a federal agency, so it isn't US Gov public domain.\nLicence checked 2026-10-31: the registration form (https://uma.pop.umn.edu/ipumsi/user/new, read in headless Chromium) carries the \"IPUMS INTERNATIONAL USAGE LICENSE\": \"Redistribution: You will not redistribute the data ... Under IPUMS International agreements with collaborating agencies, redistribution of the data to third parties is prohibited. Each member of a research team using the data must apply for access and be licensed individually. Usage: You agree to use IPUMS International data for scholarly research and educational purposes only. Commercial use is strictly prohibited.\" The form says the project description \"will be used to evaluate your application\". The citation page (https://international.ipums.org/international/citation.shtml) says publications \"must cite it appropriately\" and \"Researchers should also acknowledge the statistical agencies that originally produced the data\"; the exact versioned citation text wasn't captured.\n"
+    },
+    {
+      "id": "japan-stat-population-census",
+      "type": "dataset",
+      "title": "Statistics Bureau of Japan Population Census",
+      "description": "Japan's quinquennial Population Census (Kokusei Chōsa), the complete count of the population and households by sex, age, marital status, household structure, labour force status and more, from the Statistics Bureau of the Ministry of Internal Affairs and Communications.\n",
+      "publisher": "Statistics Bureau of Japan, Ministry of Internal Affairs and Communications",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "JP"
+      },
+      "topics": [
+        "census",
+        "population-count",
+        "households",
+        "japan"
+      ],
+      "source": {
+        "canonical_url": "https://www.stat.go.jp/english/data/kokusei/index.html"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "pdf",
+        "xlsx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Japan (national, prefecture, municipality)",
+        "temporal": "census rounds 2005-2025 on this page (2020 results latest seen)",
+        "cadence": "irregular"
+      },
+      "license": "Statistics Bureau Terms of Use (based on Public Data License 1.0, compatible with CC-BY-4.0; numerical data not subject to copyright)",
+      "attribution": "Source: Statistics Bureau, Ministry of Internal Affairs and Communications, Population Census",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The English page \"Population Census\" lists sections for the 2025, 2020, 2015, 2010 and 2005 censuses. The 2025 section shows the outline, explanation of terms and questionnaire; \"Summary of the results and statistical tables\" appears under 2020 and earlier, so 2020 is the latest round with results linked from this page. The census runs every five years, which the schema can't express, so cadence is irregular. Full tables are disseminated through e-Stat (www.e-stat.go.jp), which wasn't probed. The xlsx format and the geography levels are assumed and weren't checked.\nLicence checked 2026-10-31: the site's \"Information for use of this Website\" page (https://www.stat.go.jp/english/info/riyou.html) says content may be copied and modified, \"Commercial use of Content is also permitted\", and \"numerical data and data in Simple tables, graphs, and so forth are not subject to copyright. Accordingly the terms of use does not apply to such data, and said data may be used freely.\" It adds \"The Terms of Use was established on March 7, 2025. The Terms of Use is based on the Public Data License (Version 1.0)\" and \"The Terms of Use are compatible with the Creative Commons Attribution License 4.0\". The source-citation example is the basis of the attribution string.\n"
     },
     {
       "id": "un-desa-world-population-prospects",
