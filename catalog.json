@@ -1,9 +1,9 @@
 {
   "name": "Population Almanac",
   "description": "An open, versioned index of public population and demographic data.",
-  "count": 15,
+  "count": 16,
   "by_status": {
-    "live": 15
+    "live": 16
   },
   "entries": [
     {
@@ -381,6 +381,53 @@
       "license": "CC-BY-4.0 (HMD user agreement; HMD-constructed data only — input data remain under each provider's licence)",
       "attribution": "HMD. Human Mortality Database. Max Planck Institute for Demographic Research (Germany), University of California, Berkeley (USA), and French Institute for Demographic Studies (France). Available at www.mortality.org (data downloaded on [date], DOI: 10.4054/HMD.Countries.[version code]).",
       "notes": "Human-verified 2026-10-31: HTTP 200. The home page says \"The Human Mortality Database (HMD) is the world's leading scientific data resource on mortality in developed countries. The HMD provides detailed high-quality harmonized mortality and population estimates\" and \"The HMD follows open data principles.\" It lists summary-indicator Excel tables (infant mortality, survival to 65, life expectancy, population), zipped data files and a \"Data by country or area\" list (Australia, Austria, Belarus, Belgium ...). The country count, time spans and txt format are from general knowledge of the HMD and weren't checked; the latest release date wasn't captured. Included here for population estimates and exposures; mortality as a health outcome stays with health-almanac (CDC NVSS, WHO mortality database), and this entry doesn't duplicate them.\nRegistration: the FAQ (https://www.mortality.org/Project/FAQ) says \"We require you to register before accessing the data in order to obtain basic contact information (i.e., your name, e-mail address, affiliation, and title)\", and the login page says that users from before June 15, 2022 \"will need to register again ... and accept the new user agreement before being able to download HMD data\".\nLicence checked 2026-10-31: the User Agreement (https://www.mortality.org/Data/UserAgreement) says \"The HMD data are licensed under a Creative Commons Attribution 4.0 International License\" and \"The data constructed by the HMD team are published under the CC BY 4.0 license. This is not the case for the input data (for all HMD data series) which remain under each provider's distribution license.\" The attribution is the suggested citation from https://www.mortality.org/Research/CitationGuidelines.\n"
+    },
+    {
+      "id": "ibge-censo-demografico-2022",
+      "type": "dataset",
+      "title": "IBGE Censo Demográfico 2022",
+      "description": "Brazil's 2022 Census of Population, the largest in Latin America: population counts and the results of the universe and sample questionnaires (households, age and sex, Indigenous and quilombola populations, education, work, migration and more), with tables, microdata and documentation.\n",
+      "publisher": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "BR"
+      },
+      "topics": [
+        "census",
+        "population",
+        "brazil",
+        "latin-america"
+      ],
+      "source": {
+        "canonical_url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/22827-censo-demografico-2022.html"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": "Public-use microdata need no account; the page also lists controlled-access (\"Acesso controlado\") and restricted-access (\"Acesso restrito\") microdata, whose conditions were not checked.",
+        "rate_limit": null
+      },
+      "format": [],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Brazil (national, states, municipalities and finer census geographies)",
+        "temporal": "2022 census (reference year 2022); releases 2023-2026",
+        "cadence": "irregular"
+      },
+      "license": "unverified — IBGE's \"Termo de Uso e Política de Privacidade\" covers portal use and personal data, not data reuse; the site footer says \"© 2026 IBGE - Instituto Brasileiro de Geografia e Estatística\"",
+      "attribution": "Fonte: IBGE, Censo Demográfico 2022",
+      "notes": "Human-verified 2026-11-01 in headless Chromium (new headless mode, playwright chromium.launch with channel \"chromium\"): HTTP 200, page \"Censo 2022 | IBGE\". curl, plain and with a browser User-Agent, got HTTP 403, so the vertical needs reachability.headless: true. The page is IBGE's statistics page for the Censo Demográfico, with tabs \"Censo 2022\", \"Microdados\", \"Sobre a publicação\", \"Tabelas\", \"Conceitos e métodos\", \"Downloads\" and \"Notícias e Releases\". Microdata are split into \"Acesso público\", \"Acesso controlado\" and \"Acesso restrito\", with documentation, weighting areas and a layout/dictionary. The page also states IBGE's data revision policy for the operation. The census project site, https://censo2022.ibge.gov.br/ (the issue's URL, also HTTP 200 in headless Chromium), carries news and releases: \"Brasil tem 207,8 milhões de habitantes, mostra prévia do Censo 2022\", \"IBGE disponibiliza microdados da amostra do Censo 2022 com novo modelo e reforço à confidencialidade\" (31/08/2026), and an announced release on 18 June 2026 of \"Etnias e línguas indígenas: Resultados do universo (2ª edição)\". This entry points at the statistics page because that is where tables and microdata are kept. File formats, SIDRA table access and the API were not checked, so format is left empty. It complements brazil-ibge-pnad-continua in labor-almanac.\nLicence checked 2026-11-01: not verified. IBGE's \"Termo de Uso e Política de Privacidade para Serviços do Portal do IBGE\" (https://www.ibge.gov.br/acesso-informacao/acoes-e-programas/politica-de-privacidade.html, read in headless Chromium) deals with portal use and personal data and mentions intellectual property only in general terms. I found no statement granting reuse of IBGE data, so no licence is asserted. The page footer reads \"© 2026 IBGE - Instituto Brasileiro de Geografia e Estatística\", a site-wide notice, not a data licence. The attribution string follows Brazilian convention and is not a quoted IBGE requirement.\n"
     },
     {
       "id": "inegi-censo-poblacion-vivienda-2020",
