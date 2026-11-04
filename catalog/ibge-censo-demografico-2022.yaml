@@ -32,6 +32,13 @@ observed:
   final_url: https://www.ibge.gov.br/estatisticas/sociais/trabalho/22827-censo-demografico-2022.html
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261013002006/https://www.ibge.gov.br/estatisticas/sociais/trabalho/22827-censo-demografico-2022.html
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-13'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: Brazil (national, states, municipalities and finer census geographies)
   temporal: 2022 census (reference year 2022); releases 2023-2026

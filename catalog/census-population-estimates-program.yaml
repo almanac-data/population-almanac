@@ -35,6 +35,13 @@ observed:
   final_url: https://www.census.gov/programs-surveys/popest.html
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261104213228/https://www.census.gov/programs-surveys/popest.html
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-04'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now.'
 coverage:
   spatial: United States and Puerto Rico (national, state, county, metro/micro area, city and town)
   temporal: vintage-based annual series, with intercensal estimates by decade (Vintage 2025 latest seen)
