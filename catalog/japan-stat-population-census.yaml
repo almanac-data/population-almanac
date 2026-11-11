@@ -34,6 +34,13 @@ observed:
   final_url: https://www.stat.go.jp/english/data/kokusei/index.html
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261111215935/https://www.stat.go.jp/english/data/kokusei/index.html
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-11'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now.'
 coverage:
   spatial: Japan (national, prefecture, municipality)
   temporal: census rounds 2005-2025 on this page (2020 results latest seen)
