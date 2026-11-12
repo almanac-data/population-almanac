@@ -677,6 +677,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111215935/https://www.stat.go.jp/english/data/kokusei/index.html",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "Japan (national, prefecture, municipality)",
         "temporal": "census rounds 2005-2025 on this page (2020 results latest seen)",
@@ -729,6 +739,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261102102024/https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-02",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "United Kingdom (UK, constituent countries, local authorities and other geographies)",
         "temporal": "varies by series (mid-2025 latest)",
@@ -781,6 +801,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261018032111/https://census.statssa.gov.za/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-18",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 200)."
+        }
+      ],
       "coverage": {
         "spatial": "South Africa (national and sub-national, via Stats by Location)",
         "temporal": "1996, 2001, 2011, 2022 censuses",
@@ -831,6 +861,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111220845/https://www.un.org/development/desa/pd/content/international-migrant-stock",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "global (233 countries and areas)",
         "temporal": "1990-2024",
@@ -887,6 +927,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261027161846/https://population.un.org/wpp/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-27",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "global (237 countries or areas, plus regional and income-group aggregates)",
         "temporal": "1950-2100 (estimates to the present, projections to 2100)",
@@ -939,6 +989,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261030084615/https://unstats.un.org/unsd/demographic-social/products/dyb/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-30",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 200)."
+        }
+      ],
       "coverage": {
         "spatial": "global (national data reported by countries or areas)",
         "temporal": "1948-present (DYB 2024 latest)",
